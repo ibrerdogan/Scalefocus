@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct ScalefocusApp: App {
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           
+                IntoView()
+                .preferredColorScheme(.light)
+                .environmentObject(StateManager())
+       
         }
     }
 }
